@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site Simples</title>
+</head>
+<body>
+    <!-- HEADER: Cabeçalho do Site -->
+     <header>
+        <h1>Bem-vindo ao meu Site Simples</h1>
+        <!-- Título Visível -->
+         <!-- NAV: menu de navegação -->
+          <nav>
+            <ul>
+                <li><a href="#inicío">Início</a></li>
+                 <li><a href="#lista">Listas</a></li>
+                 <li> <a href="#tabela">Tabela</a></li>
+                 <li> <a href="#contato">Contato</a></li>
+                 <li> <a href="https://senac.br" target="_blank" rel="noopener noreferrer"> Link exeterno</a></li>
+                 <!-- ancora externa -->
+            </ul>
+          </nav>
+     </header>
+     <!-- MAIN: conteúdo principal da página -->
+      <main id="Início">
+        <!-- SECTION: bloco de conteúdo -->
+         <section aria-labelledby="sobre">
+            <h2 id="sobre">sobre este site</h2>
+            <p>
+                Este é um exemplo <strong>somente com HTML</strong> contendo as tags solicitadas: título, parágrafos, Imagem, navegação, listas, formulários, âncoras, selects, radio, checkbox, botões, main, section, tabela, header e footer.
+            </p>
+           <!-- Parágrafo -->
+           <!-- IMAGEM: com texto alternativo -->
+            <figure>
+                <img src="https://picsum.photos/800/300"
+                alt="Imagem ilustrativa gerada aleatoriamente"
+                width="800" height="300" />
+                <figcaption>Imagem ilustrativa (via picsum.photos)</figcaption>
+            </figure>
+            </section>
+
+            <!--SELECT:Listas -->
+            <section id="lista" aria-labelledby="listas">
+                <h2 id="listas">exemplos de listas</h2>
+
+                <h3>Lista não ordenada (ul)</h3>
+                <ul>
+                 <li>Item A</li>
+                 <li>Item B</li>
+                 <li>Item C</li>
+                </ul>
+                <!-- Lista Não ordenada -->
+
+<h3>Lista Ordenada (ol)</h3>
+<ol>
+    <li>Passo 1</li>
+    <li>Passo 2</li>
+    <li>Passo 3</li>
+    </ol> <!--Lista ordenada-->
+ </section>
+
+ <!-- SECTION:Tabela -->
+  <section id="tabela" aria-labelledby="dados">
+    <h2 id="dados">Tabela de Exemplo</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+     <caption>Usuários cadastrados</caption>
+     <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Perfil</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <td>Ana</td>
+            <td>ana@example.com</td>
+            <td>Admin</td>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>bruno@example</td>
+            <td>Editor</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>carla@example.com</td>
+                <td>Leitor</td>
+            </tr>
+      </tbody>
+     </table> <!--table-->
+     </section>
+    <!-- SECTION: Formulario -->
+     <section id="contato" aria-labelledby="formtitulo">
+        <h2 id="formtitulo">Formulário de Contato</h2>
+        <form action="#" method="get">
+            <!--Campo de Texto-->
+            <p>
+               <label for="nome">nome</label>
+               <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </p>
+            <!--SELECT: escolha de assunto-->
+            <p>
+               <label for="assunto">Assunto:</label>
+               <select id="assunto" name="assunto" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                </select>
+                </p>
+
+            <!-- RADIO: preferencia de contato -->
+             <fieldset>
+                <legend>Como prefere ser contatado?</legend>
+                <label>
+                    <input type="radio" name="contato" value="email" required /> Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contato" value="telefone" /> telefone
+                    </label>
+                    </fieldset>
+                    <!-- CHECKBOX: consemtimentos -->
+                     <fieldset>
+                        <legend>Preferências</legend>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="novidades" /> Quero receber novidades
+                            </label>
+                            <label>
+                                <input type="checkbox" name="termos" required /> Li e aceito os termos
+                            </label>
+                     </fieldset>
+            <!--Buttons: enviar e limpar-->
+            <p>
+                <button type="submit">enviar</button>
+                <button type="reset">limpar</button>
+            </p>
+            </form>
+                     <!--Âncora para voltar ao topo  -->
+            <p><a href="#inicio">Voltar ao início</a></p>
+            </section>
+            </main>
+
+            <!--FOOTER rodapé do site-->
+            <footer>
+                <p>&copy; 2025 Meu Site Simples. Todos os direitos reservados.</p>
+            </footer>
+</body>
+</html>
